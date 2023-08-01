@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  --background-color: #fff; /* Valor por defecto para el fondo */
+  --text-color: #333; /* Valor por defecto para el texto */
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.match-details {
+  margin-bottom: 20px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+}
+
+.team {
+  width: 40%;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+
+button {
+  margin: 5px;
+}
+
+/* Modo Oscuro */
+.dark-mode {
+  --background-color: #333; /* Cambiamos el valor del fondo en modo oscuro */
+  --text-color: #fff; /* Cambiamos el valor del texto en modo oscuro */
+}
+
+.dark-mode .team {
+  border-color: #fff; /* Cambiamos el color del borde del equipo en modo oscuro */
+  color: #fff; /* Cambiamos el color del texto del equipo en modo oscuro */
+}
+
+.dark-mode input {
+  color: #333; /* Cambiamos el color del texto de los inputs en modo oscuro */
+}
+
+.dark-mode #toggleTheme {
+  background-color: #fff; /* Cambiamos el color del botón en modo oscuro */
+  color: #333; /* Cambiamos el color del texto del botón en modo oscuro */
+}
